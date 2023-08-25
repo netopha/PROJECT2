@@ -1,0 +1,47 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+  position: relative;
+  color: orange;
+  font-size: 100px;
+}
+#canvas {
+  position: relative;
+  top: 80px;
+  left: 500px;
+
+  color: blue;
+  /* border: 10px solid blue; */
+  background-color: black;
+}
+#control {
+  position: absolute;
+  width: 500px;
+  height: 50px;
+  top: 600px;
+  left: 500px;
+}
+#startBtn {
+  position: absolute;
+  color: green;
+  border: 2px solid green;
+  border-radius: 20px;
+  font-size: 20px;
+  padding: 0px 20px;
+  background-color: greenyellow;
+  left: 215px;
+  top: 10px;
+}
+.paragraph {
+  position: absolute;
+  color: orangered;
+
+  font-size: 100px;
+
+  left: 130px;
+  top: -400px;
+}

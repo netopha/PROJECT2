@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Pacman</title>
+    <script defer src="Canvas.js"></script>
+    <script defer src="index.js"></script>
+
+    <script defer src="pacman.js"></script>
+
+    <script defer src="ghost.js"></script>
+    <script defer src="caught.js"></script>
+    <link rel="stylesheet" href="pacman.css" />
+  </head>
+  <body onkeydown="handleKeyDown (event.key)">
+    <canvas id="canvas" width="500px" height="500px"> </canvas>
+    <div id="control"></div>
+    <img
+      width="40px"
+      ;
+      height="40px"
+      ;
+      id="ghostred"
+      ;
+      style="position: absolute; display: block; top: 100px; left: 940px"
+      src="redghost.png"
+      alt="redGhost"
+    />
+    <img
+      width="40px"
+      ;
+      height="40px"
+      ;
+      id="pacman"
+      ;
+      style="position: absolute; display: block; top: 310px; left: 730px"
+      src="pacman.png"
+      alt="pacman"
+    />
+  </body>
+</html>

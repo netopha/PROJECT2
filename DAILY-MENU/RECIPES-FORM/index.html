@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RECIPES FORM</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="formContainer">
+      <h1>הכנס מתכון חדש</h1>
+      <form id="newRecipes">
+        <!-- שם המתכון -->
+        <label for="recipesName">מתכון : שם</label>
+        <div class="inputDiv">
+          <input
+            type="text"
+            id="recipesName"
+            name="recipesName"
+            placeholder="הכנס שם מתכון"
+            autocomplete="off"
+          />
+          <div id="recipesNameError" class="error-message">
+            יש להזין אותיות בלבד.
+          </div>
+        </div>
+        <!--  מספר סועדים -->
+        <label for="numOfDainers">מספר סועדים</label>
+        <div class="inputDiv">
+          <input
+            type="text"
+            id="numOfDainers"
+            name="numOfDainers"
+            autocomplete="off"
+          />
+          <div id="numOfDainersError" class="error-message">
+            יש להזין מספרים בלבד.
+          </div>
+        </div>
+        <!-- מילות מפתח -->
+
+        <label for="keyWords">מילות מפתח</label>
+        <div class="inputDiv">
+          <input
+            type="text"
+            id="keyWords"
+            name="keyWords"
+            autocomplete="off"
+            placeholder="עד 5 מילים מופרדות ב ,"
+          />
+          <div id="keyWordsError" class="error-message">
+            יש להזין אותיות רווח ופסיק בלבד.
+          </div>
+        </div>
+        <!-- זמן הכנה -->
+        <label for="processTime">זמן הכנה: בדקות</label>
+        <div class="inputDiv">
+          <input
+            type="text"
+            id="processTime"
+            name="processTime"
+            autocomplete="off"
+            placeholder=" 12 דקות"
+          />
+          <div id="processTimeError" class="error-message">
+            יש להזין אותיות וספרות בלבד
+          </div>
+        </div>
+        <!-- זמן בישול/אפייה -->
+        <!-- סה"כ זמן הכנה -->
+        <!-- איזו מנה -->
+        <div id="recipesTypeDiv">
+          <label for="recipesTypeTexterea">מנה</label>
+          <textarea
+            name="recipesType"
+            id="recipesTypeTexterea"
+            readonly
+          ></textarea>
+          <select id="recipesTypeSelect" class="selectElement">
+            <option value="עיקרית">עיקרית</option>
+            <option value="תוספת">תוספת</option>
+            <option value="סלט">סלט</option>
+            <option value="קינוח">קינוח</option>
+          </select>
+        </div>
+      </form>
+    </div>
+
+    <script src="/DAILY-MENU-JS/classes/recipe.js" type="module"></script>
+    <script src="script.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,291 @@
+html {
+  font-size: 14px;
+  background-color: #8be8e5;
+}
+
+#playGround {
+  position: relative;
+  width: 50vw;
+  height: 90vh;
+
+  left: 25vw;
+  padding: 0px;
+  font-size: 16px;
+  transition: transform 1s, visibility 1s, clip-path 1s;
+}
+.image {
+  position: absolute;
+  width: 50vh;
+}
+h1 {
+  display: block;
+  text-align: center;
+  font-size: 40px;
+  margin: 0px;
+  color: #6f61c0;
+}
+.client {
+  color: #8be8e5;
+  position: absolute;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  background-color: #6f61c0;
+}
+.button {
+  display: none;
+}
+.current:hover {
+  box-shadow: 0 8px 8px 5px rgba(39, 30, 1, 0.352);
+}
+
+.insertNewDiv {
+  transform: translateY(-20vh);
+  visibility: visible;
+}
+#SubscriptionCard {
+  position: absolute;
+
+  left: 5vw;
+  width: 40vw;
+  height: 90vh;
+  transition: all 0.2s;
+}
+.outOfRange {
+  visibility: hidden;
+  top: 0vh;
+  left: 4.5vw;
+  width: 31vw;
+  height: 15vh;
+  transform: perspective(500px) rotateX(72deg);
+  box-shadow: 0 4px 8px rgba(39, 30, 1, 0.352);
+  visibility: hidden;
+}
+.outOfRangeDown {
+  visibility: visible;
+
+  transition: all 0.2s;
+}
+.beforePrevious {
+  top: 0vh;
+  left: 4.5vw;
+  width: 31vw;
+  height: 15vh;
+  transform: perspective(500px) rotateX(72deg);
+  box-shadow: 0 4px 8px rgba(39, 30, 1, 0.352);
+}
+.beforePreviousUp {
+  visibility: hidden;
+
+  transition: all 0.2s;
+}
+.beforePreviousDown {
+  transform: translateY(9vh) translateX(-3vw) perspective(500px) rotateX(36deg);
+  width: 37vw;
+  visibility: visible;
+  transition: all 0.2s;
+}
+.previous {
+  top: 9vh;
+  left: 1.5vw;
+  width: 37vw;
+  height: 15vh;
+  transform: perspective(500px) rotateX(36deg);
+  box-shadow: 0 3px 6px rgba(39, 30, 1, 0.352);
+}
+.previousUp {
+  transform: translateY(-9vh) translateX(3vw) perspective(500px) rotateX(72deg);
+  width: 31vw;
+  visibility: visible;
+  transition: all 0.2s;
+}
+.previousDown {
+  transform: translateY(15vh) translateX(-1.5vw) perspective(500px)
+    rotateX(0deg);
+  width: 40vw;
+  visibility: visible;
+  transition: all 0.2s;
+}
+.current {
+  color: #8be8e5;
+  top: 24vh;
+  left: 0vw;
+  width: 40vw;
+  height: 15vh;
+  font-size: 35px;
+  background-color: #6f61c0;
+  border-radius: 3px;
+  border: none;
+  z-index: 2;
+  box-shadow: 0 4px 8px rgba(39, 30, 1, 0.352);
+  transition: all 0.2s;
+}
+.currentUp {
+  transform: translateY(-15vh) translateX(1.5vw) perspective(500px)
+    rotateX(36deg);
+  width: 37vw;
+  visibility: visible;
+  transition: all 0.2s;
+}
+.currentDown {
+  transform: translateY(15vh) translateX(1.5vw) perspective(500px)
+    rotateX(-36deg);
+  width: 37vw;
+  visibility: visible;
+  transition: all 0.2s;
+}
+.next {
+  top: 39vh;
+  left: 1.5vw;
+  width: 37vw;
+  height: 15vh;
+  transform: perspective(500px) rotateX(-36deg);
+  box-shadow: 0 3px 6px rgba(39, 30, 1, 0.352);
+}
+.nextUp {
+  transform: translateY(-15vh) translateX(-1.5vw) perspective(500px)
+    rotateX(0deg);
+  width: 40vw;
+  visibility: visible;
+  transition: all 0.2s;
+}
+.nextDown {
+  transform: translateY(9vh) translateX(3vw) perspective(500px) rotateX(-72deg);
+  width: 31vw;
+  visibility: visible;
+  transition: all 0.2s;
+}
+
+.afterNext {
+  top: 48vh;
+  left: 4.5vw;
+  width: 31vw;
+  height: 15vh;
+  transform: perspective(500px) rotateX(-72deg);
+  box-shadow: 0 3px 6px rgba(39, 30, 1, 0.352);
+}
+.afterNextUp {
+  transform: translateY(-9vh) translateX(-3vw) perspective(500px)
+    rotateX(-36deg);
+  width: 37vw;
+  visibility: visible;
+  transition: all 0.2s;
+}
+.afterNextDown {
+  visibility: visible;
+  transition: all 0.2s;
+}
+.newClient {
+  top: 48vh;
+  left: 4.5vw;
+  width: 31vw;
+  height: 15vh;
+  transform: perspective(500px) rotateX(-72deg);
+  box-shadow: 0 3px 6px rgba(39, 30, 1, 0.352);
+  visibility: hidden;
+}
+.newClientUp {
+  visibility: visible;
+  transition: all 0.2s;
+}
+.pushToOpenCurrent {
+  width: 39.5vw;
+  height: 14.5vh;
+  transform: translateY(0.25vh) translateX(0.25vw);
+  box-shadow: 0 0px 0px rgba(39, 30, 1, 0.352);
+  transition: all 0.5s;
+}
+.releaseToOPenCurrent {
+  width: 41vw;
+
+  height: 16vh;
+  transform: translateY(-2.5vh) translateX(-0.5vw);
+  box-shadow: 0 12px 24px rgba(39, 30, 1, 0.352);
+  transition: all 0.8s;
+}
+.pushToCloseCurrent {
+  width: 39.5vw;
+  height: 14.5vh;
+  transform: translateY(0.25vh) translateX(0.25vw);
+  box-shadow: 0 0px 0px rgba(39, 30, 1, 0.352);
+  transition: all 0.2s;
+}
+.releaseToCloseCurrent {
+  width: 40vw;
+  height: 15vh;
+  transform: translateY(0vh) translateX(0vw);
+  box-shadow: 0 4px 8px rgba(39, 30, 1, 0.352);
+  transition: all 0.2s;
+}
+.infoDiv {
+  position: relative;
+  width: 36vw;
+  height: 0vh;
+  top: 26vh;
+  left: 2vw;
+  background: #d5ffe4;
+  z-index: 1;
+  transition: height 0.5s ease;
+  direction: rtl;
+  overflow: hidden;
+  color: #6f61c0;
+}
+/* .newClientForm {
+  height: 60vh;
+  overflow: hidden;
+} */
+.newForm {
+  position: relative;
+  top: 15vh;
+  left: -0.5vw;
+  height: 0vh;
+  width: 35vw;
+
+  transition: height 0.2s ease;
+  overflow: hidden;
+  direction: rtl;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: repeat(6 2vh) 8vh;
+  /* gap: 0.2vh; */
+}
+.inputInfo {
+  height: 2.5vh;
+  background-color: #d5ffe4;
+}
+.remarksInfo {
+  height: 13vh;
+  background-color: #d5ffe4;
+  resize: none;
+}
+#iconsDiv {
+  position: absolute;
+  top: 60vh;
+  width: 35vw;
+  display: flex;
+  justify-content: space-around;
+}
+/* .showClientDiv {
+  display: "none";
+} */
+.showClient {
+  position: relative;
+  top: 15vh;
+  left: -0.5vw;
+  height: 0vh;
+  width: 35vw;
+  text-align: center;
+  transition: height 0.2s ease;
+  overflow: hidden;
+  direction: rtl;
+  /* display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: repeat(6 2vh) 8vh; */
+}
+@media screen and (min-width: 768px) {
+  #playGround {
+    width: 30vw;
+  }
+}

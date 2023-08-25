@@ -1,0 +1,127 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  background-color: #ff5403;
+}
+#appContainer {
+  position: absolute;
+  top: 290px;
+  width: 626px;
+  height: 170px;
+  background-color: #fff323;
+  border: 6px solid #fff323;
+  border-radius: 58px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wheel-container {
+  position: relative;
+
+  width: 200px;
+  height: 150px;
+  border-radius: 50px;
+  background-color: #fff323;
+  perspective: 1000px;
+  box-shadow: 1px 1px 20px #a39f8b;
+  overflow: hidden;
+  display: inline-block;
+}
+.wheel {
+  top: -215px;
+  width: 200px;
+  height: 600px;
+  position: absolute;
+  transform: rotateX(0deg) translateY(230px);
+  transform-origin: center center center;
+  transform-style: preserve-3d;
+}
+.window {
+  position: absolute;
+  width: 200px;
+  height: 150px;
+  border-radius: 50px;
+  box-shadow: inset 1px 1px 10px #56554f;
+
+  position: absolute;
+  border: 3px solid #ffca03;
+}
+
+.frame {
+  border: 8px solid #ffca03;
+}
+
+.wheel-item {
+  border-radius: 60px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  background-color: #fff323;
+  width: 200px;
+  height: 100px;
+}
+.spin-button {
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  background-color: #ffca03;
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@keyframes spinWheel {
+  0% {
+    transform: rotateX(0deg) translateY(230px);
+  }
+
+  50% {
+    transform: rotateX(1080deg) translateY(230px);
+  }
+  100% {
+    transform: rotateX(1350deg) translateY(230px);
+  }
+}
+
+.wheel-item:nth-child(1) {
+  transform: rotateX(0deg) translateZ(137px);
+}
+
+.wheel-item:nth-child(2) {
+  transform: rotateX(40deg) translateZ(137px);
+}
+
+.wheel-item:nth-child(3) {
+  transform: rotateX(80deg) translateZ(137px);
+}
+.wheel-item:nth-child(4) {
+  transform: rotateX(120deg) translateZ(137px);
+}
+
+.wheel-item:nth-child(5) {
+  transform: rotateX(160deg) translateZ(137px);
+}
+
+.wheel-item:nth-child(6) {
+  transform: rotateX(200deg) translateZ(137px);
+}
+
+.wheel-item:nth-child(7) {
+  transform: rotateX(240deg) translateZ(137px);
+}
+
+.wheel-item:nth-child(8) {
+  transform: rotateX(280deg) translateZ(137px);
+}
+
+.wheel-item:nth-child(9) {
+  transform: rotateX(320deg) translateZ(137px);
+}

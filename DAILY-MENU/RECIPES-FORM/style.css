@@ -1,0 +1,46 @@
+#formContainer {
+  direction: rtl;
+}
+form {
+  position: relative;
+  margin: auto;
+  width: 620px;
+  height: 650px;
+  color: rgb(164, 118, 2);
+  border: 2px dashed rgb(214, 180, 96);
+  padding: 10px;
+}
+#recipesName {
+  align-items: center;
+}
+h1 {
+  color: rgb(164, 118, 2);
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  margin: 0px;
+  margin-bottom: 20px;
+}
+.error-message {
+  width: 200px;
+  text-align: center;
+  letter-spacing: 2px;
+  display: none;
+  color: red;
+  font-size: 10px;
+  font-weight: bold;
+}
+/* .selectElement {
+  height: 22px;
+} */
+.inputDiv {
+  height: 35px;
+}
+textarea {
+  resize: none;
+}
+#recipesTypeDiv {
+  height: 22px;
+  display: flex;
+  gap: 10px;
+  margin-top: 5px;
+}

@@ -1,0 +1,12 @@
+# TypeScript compiled files
+
+
+# Node.js modules (if applicable)
+/node_modules/
+
+# Other build artifacts (if any)
+/build/
+
+# Editor/IDE specific files
+.vscode/
+.idea/

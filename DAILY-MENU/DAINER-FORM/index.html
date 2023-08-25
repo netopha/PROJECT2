@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>DMform</title>
+
+    <script src="/DAILY-MENU-JS/classes/dainer.js" type="module" defer></script>
+    <script src="script.js" type="module" defer></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <form id="dainerForm">
+        <h1>הכר את הסועד</h1>
+        <div id="generalQuestion">
+          <label for="firstNameInput" class="form">שם פרטי : </label>
+          <div class="inputDiv">
+            <input
+              type="text"
+              id="firstNameInput"
+              class="form"
+              name="firstName"
+              placeholder=" יש להזין אותיות בלבד."
+            />
+            <div id="firstNameInputError" class="error-message">
+              יש להזין אותיות בלבד.
+            </div>
+          </div>
+
+          <label for="lastNameInput" class="form">שם משפחה : </label>
+          <div class="inputDiv">
+            <input
+              type="text"
+              id="lastNameInput"
+              name="lastName"
+              class="form"
+              placeholder=" יש להזין אותיות בלבד."
+            />
+            <div id="lastNameInputError" class="error-message">
+              יש להזין אותיות בלבד.
+            </div>
+          </div>
+
+          <label for="age" class="form">גיל : </label>
+          <div class="inputDiv">
+            <input
+              type="text"
+              id="ageInput"
+              name="age"
+              class="form"
+              placeholder="יש להזין מספרים בין 2-120 בלבד."
+            />
+            <div id="ageInputError" class="error-message">
+              יש להזין מספרים בין 2-120 בלבד.
+            </div>
+          </div>
+          <label for="weightInput" class="form">משקל (קילוגרם) :</label>
+          <div class="inputDiv">
+            <input
+              type="text"
+              id="weightInput"
+              name="weight"
+              class="form"
+              placeholder="יש להזין מספרים בין 10 ל 200 בלבד."
+            />
+            <div id="weightInputError" class="error-message">
+              יש להזין מספרים בין 10 ל 200 בלבד.
+            </div>
+          </div>
+          <label for="heightInput" class="form">גובה (ס"מ) :</label>
+          <div class="inputDiv">
+            <input
+              type="text"
+              id="heightInput"
+              name="height"
+              class="form"
+              placeholder="יש להזין מספרים בין 50 ל 220 בלבד."
+            />
+            <div id="heightInputError" class="error-message">
+              יש להזין מספרים בין 50 ל 220 בלבד.
+            </div>
+          </div>
+
+          <label for="lastNameInput" class="form">אלרגיות :</label>
+          <div class="inputDiv">
+            <input
+              type="text"
+              id="lastNameInput"
+              name="lastName"
+              class="form"
+              placeholder=" יש להזין אותיות בלבד."
+            />
+            <div id="lastNameInputError" class="error-message">
+              יש להזין אותיות בלבד.
+            </div>
+          </div>
+        </div>
+        <br /><br />
+
+        <div id="selectProperties">
+          <label for="menuTypeTextarea">סוג תפריט:</label>
+          <textarea id="menuTypeTextarea" name="menuType" readonly></textarea>
+
+          <select id="selectMenuType" class="selectElement">
+            <option value="צמחוני">צמחוני</option>
+            <option value="טבעוני">טבעוני</option>
+            <option value="בשרי">בשרי</option>
+            <option value="בשרי כשר">בשרי כשר</option>
+          </select>
+
+          <label for="ingredientsTextarea">מרכיבים אהובים בארוחה:</label>
+          <textarea
+            id="ingredientsTextarea"
+            name="ingredients"
+            readonly
+            placeholder="ניתן לבחור במספר אפשרויות מהתפריט"
+          ></textarea>
+
+          <select id="selectIngredients" class="selectElement">
+            <option value="potato">תפוח אדמה</option>
+            <option value="rice">אורז</option>
+            <option value="pasta">פסטה</option>
+            <option value="quinoa">קינואה</option>
+            <option value="couscous">קוסקוס</option>
+            <option value="mayonnaise">מיונז</option>
+            <option value="mustard">חרדל</option>
+          </select>
+
+          <label for="recipesTextarea">מתכונים אהובים :</label>
+          <textarea
+            id="recipesTextarea"
+            name="recipes"
+            readonly
+            placeholder="ניתן לבחור במספר אפשרויות מהתפריט"
+          ></textarea>
+
+          <select id="selectRecipes" class="selectElement">
+            <option value="בולונז">בולונז</option>
+            <option value="אורז וכנפיים בתנור">אורז וכנפיים בתנור"</option>
+            <option value="פסטה אלפרדו">פסטה אלפרדו</option>
+            <option value="פיצה">פיצה</option>
+            <option value="פלפל ממולא">פלפל ממולא</option>
+            <option value="קינואה עם ירקות">קינואה עם ירקות</option>
+            <option value="מרק קובה">מרק קובה</option>
+          </select>
+        </div>
+        <button type="submit" id="submitDainer">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>

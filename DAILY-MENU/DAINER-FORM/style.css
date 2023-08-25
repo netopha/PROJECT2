@@ -1,0 +1,78 @@
+#container {
+  direction: rtl;
+}
+h1 {
+  color: green;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  margin: 0px;
+  margin-bottom: 20px;
+}
+#selectProperties {
+  height: 400px;
+  display: grid;
+  grid-template-columns: 100px 200px 100px;
+  grid-template-rows: 22px auto auto;
+  gap: 20px 10px;
+  margin-bottom: 20px;
+}
+textarea {
+  resize: none;
+}
+#generalQuestion {
+  height: 100px;
+  display: grid;
+  grid-template-columns: 80px 200px 80px 200px;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 0px 20px;
+}
+.selectElement {
+  height: 22px;
+}
+.error-message {
+  width: 200px;
+  text-align: center;
+  letter-spacing: 2px;
+  display: none;
+  color: red;
+  font-size: 10px;
+}
+.form {
+  width: 190px;
+}
+.inputDiv {
+  height: 35px;
+}
+form {
+  position: relative;
+  margin: auto;
+  width: 620px;
+  height: 650px;
+  border: 2px dashed green;
+  padding: 10px;
+}
+::placeholder {
+  color: green;
+  opacity: 0.5;
+}
+
+/* #menuType {
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+ */
+/* #ingredientsContainer {
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+} */
+/* #ingredientsTextarea {
+  position: relative;
+
+  overflow-y: auto;
+  height: 100px;
+  resize: vertical;
+} */

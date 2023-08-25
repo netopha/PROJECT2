@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Client LIST</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/fontawesome.min.css"
+    />
+    <script src="script.js" type="module" defer></script>
+    <script src="client.js" type="module" defer></script>
+  </head>
+  <body>
+    <h1>גלגלת כרטיסיות - לקוחות</h1>
+    <div id="playGround">
+      <!-- <img src="mountain-8062284_640.webp" alt="mountain" class="image" /> -->
+      <div id="SubscriptionCard">
+        <div class="client beforePrevious" id="clientDiv1">זוהי</div>
+        <div class="client previous" id="clientDiv2">גלגלת</div>
+
+        <div class="client current" id="clientDiv3">לקוח חדש</div>
+        <div class="client next" id="clientDiv4">לקוח חדש</div>
+        <div class="client afterNext" id="clientDiv5">לקוח חדש</div>
+        <div class="client newClient" id="clientDiv6">לקוח חדש</div>
+        <!-- <div class="client newClient" id="clientDiv7">לקוח חדש</div>
+        <div class="client newClient" id="clientDiv8">לקוח חדש</div>
+        <div class="client newClient" id="clientDiv9">לקוח חדש</div> -->
+        <div id="infoDiv" class="infoDiv">
+          <!-- <div class="newClientForm"> -->
+          <form action="" class="newForm">
+            <label for="fullName"> שם מלא:</label>
+            <input
+              type="text"
+              id="fullName"
+              name="fullName"
+              class="inputInfo"
+              autocomplete="off"
+            />
+            <label for="age">גיל:</label>
+            <input
+              type="text"
+              id="age"
+              name="age"
+              class="inputInfo"
+              autocomplete="off"
+            />
+            <label for="parentName">שם ההורה:</label>
+            <input
+              type="text"
+              id="parentName"
+              name="parentName"
+              class="inputInfo"
+              autocomplete="off"
+            />
+            <label for="address">כתובת:</label>
+            <input
+              type="text"
+              id="address"
+              name="address"
+              class="inputInfo"
+              autocomplete="off"
+            />
+            <label for="settlement">ישוב:</label>
+            <input
+              type="text"
+              id="settlement"
+              name="settlement"
+              class="inputInfo"
+              autocomplete="off"
+            />
+            <label for="phoneNum">טלפון:</label>
+            <input
+              type="text"
+              id="phoneNum"
+              name="phoneNum"
+              class="inputInfo"
+              autocomplete="off"
+            />
+            <label for="remarks">הערות:</label>
+            <textarea
+              name="remarks"
+              id="remarks"
+              class="remarksInfo"
+            ></textarea>
+          </form>
+          <!--  </div> -->
+          <!-- <div class="showClientDiv"> -->
+          <div id="showClient" class="showClient"></div>
+          <!-- </div> -->
+          <div id="iconsDiv">
+            <img src="edit.svg" alt="Icon description" id="editClient" />
+            <img src="save.svg" alt="Icon description" id="saveClient" />
+            <img src="trash.svg" alt="Icon description" id="trashClient" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
