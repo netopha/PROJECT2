@@ -1,0 +1,11 @@
+body {
+  background-color: gray;
+  align-items: center;
+  transition: transform 2s;
+  position: relative;
+}
+
+#canvas {
+  border: 2px solid black;
+  position: relative;
+}
