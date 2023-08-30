@@ -33,12 +33,12 @@ body {
   display: inline-block;
 }
 .wheel {
-  top: -215px;
+  top: -205px;
   width: 200px;
-  height: 600px;
+  height: 560px;
   position: absolute;
-  transform: rotateX(0deg) translateY(230px);
-  transform-origin: center center center;
+  transform: rotateX(-5deg) translateY(230px);
+  transform-origin: center, center, center;
   transform-style: preserve-3d;
 }
 .window {
@@ -48,7 +48,6 @@ body {
   border-radius: 50px;
   box-shadow: inset 1px 1px 10px #56554f;
 
-  position: absolute;
   border: 3px solid #ffca03;
 }
 
@@ -78,18 +77,15 @@ body {
   cursor: pointer;
 }
 
-@keyframes spinWheel {
+/* @keyframes spinWheel {
   0% {
     transform: rotateX(0deg) translateY(230px);
   }
 
-  50% {
-    transform: rotateX(1080deg) translateY(230px);
-  }
   100% {
-    transform: rotateX(1350deg) translateY(230px);
+    transform: rotateX(40deg) translateY(230px);
   }
-}
+} */
 
 .wheel-item:nth-child(1) {
   transform: rotateX(0deg) translateZ(137px);

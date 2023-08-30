@@ -18,8 +18,14 @@ const appContainer3 = document.getElementById("wheelContainer3");
 if (appContainer3) {
   slotMachineWheel3 = new SlotMachineWheel(appContainer3);
 }
-
 const spinButton = document.getElementById("spinButton");
+
+if (slotMachineWheel1 && slotMachineWheel2 && slotMachineWheel3) {
+  slotMachineWheel1.startSpinning();
+  slotMachineWheel2.startSpinning();
+  slotMachineWheel3.startSpinning();
+}
+
 if (spinButton) {
   spinButton.addEventListener("click", () => {
     if (slotMachineWheel1 && slotMachineWheel2 && slotMachineWheel3) {
